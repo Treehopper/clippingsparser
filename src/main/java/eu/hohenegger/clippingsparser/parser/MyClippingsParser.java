@@ -1,4 +1,4 @@
-// $ANTLR 3.4 C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g 2011-11-13 20:24:20
+// $ANTLR 3.4 MyClippings.g 2011-11-13 20:24:20
 
 package eu.hohenegger.clippingsparser.parser;
 import eu.hohenegger.clippingsparser.model.*;
@@ -62,7 +62,7 @@ public class MyClippingsParser extends Parser {
     }
 
     public String[] getTokenNames() { return MyClippingsParser.tokenNames; }
-    public String getGrammarFileName() { return "C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g"; }
+    public String getGrammarFileName() { return "MyClippings.g"; }
 
 
         public List<Clipping> result = new ArrayList<Clipping>();
@@ -70,17 +70,17 @@ public class MyClippingsParser extends Parser {
 
 
     // $ANTLR start "clippings"
-    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:32:1: clippings : ( item SEP NEWLINE )* EOF ;
+    // MyClippings.g:32:1: clippings : ( item SEP NEWLINE )* EOF ;
     public final void clippings() throws RecognitionException {
         int clippings_StartIndex = input.index();
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 1) ) { return ; }
 
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:32:11: ( ( item SEP NEWLINE )* EOF )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:32:14: ( item SEP NEWLINE )* EOF
+            // MyClippings.g:32:11: ( ( item SEP NEWLINE )* EOF )
+            // MyClippings.g:32:14: ( item SEP NEWLINE )* EOF
             {
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:32:14: ( item SEP NEWLINE )*
+            // MyClippings.g:32:14: ( item SEP NEWLINE )*
             loop1:
             do {
                 int alt1=2;
@@ -93,7 +93,7 @@ public class MyClippingsParser extends Parser {
 
                 switch (alt1) {
             	case 1 :
-            	    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:32:15: item SEP NEWLINE
+            	    // MyClippings.g:32:15: item SEP NEWLINE
             	    {
             	    pushFollow(FOLLOW_item_in_clippings65);
             	    item();
@@ -142,7 +142,7 @@ public class MyClippingsParser extends Parser {
 
 
     // $ANTLR start "item"
-    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:34:1: item : title ( bookmark | highlight | note ) ;
+    // MyClippings.g:34:1: item : title ( bookmark | highlight | note ) ;
     public final void item() throws RecognitionException {
         item_stack.push(new item_scope());
         int item_StartIndex = input.index();
@@ -156,8 +156,8 @@ public class MyClippingsParser extends Parser {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 2) ) { return ; }
 
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:44:2: ( title ( bookmark | highlight | note ) )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:44:4: title ( bookmark | highlight | note )
+            // MyClippings.g:44:2: ( title ( bookmark | highlight | note ) )
+            // MyClippings.g:44:4: title ( bookmark | highlight | note )
             {
             pushFollow(FOLLOW_title_in_item101);
             title1=title();
@@ -165,7 +165,7 @@ public class MyClippingsParser extends Parser {
             state._fsp--;
             if (state.failed) return ;
 
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:44:10: ( bookmark | highlight | note )
+            // MyClippings.g:44:10: ( bookmark | highlight | note )
             int alt2=3;
             int LA2_0 = input.LA(1);
 
@@ -218,7 +218,7 @@ public class MyClippingsParser extends Parser {
             }
             switch (alt2) {
                 case 1 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:44:11: bookmark
+                    // MyClippings.g:44:11: bookmark
                     {
                     pushFollow(FOLLOW_bookmark_in_item104);
                     bookmark();
@@ -229,7 +229,7 @@ public class MyClippingsParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:44:22: highlight
+                    // MyClippings.g:44:22: highlight
                     {
                     pushFollow(FOLLOW_highlight_in_item108);
                     highlight();
@@ -240,7 +240,7 @@ public class MyClippingsParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:44:34: note
+                    // MyClippings.g:44:34: note
                     {
                     pushFollow(FOLLOW_note_in_item112);
                     note();
@@ -285,7 +285,7 @@ public class MyClippingsParser extends Parser {
 
 
     // $ANTLR start "title"
-    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:50:1: title : (~ ( NEWLINE | SEP ) )+ NEWLINE ;
+    // MyClippings.g:50:1: title : (~ ( NEWLINE | SEP ) )+ NEWLINE ;
     public final MyClippingsParser.title_return title() throws RecognitionException {
         MyClippingsParser.title_return retval = new MyClippingsParser.title_return();
         retval.start = input.LT(1);
@@ -295,10 +295,10 @@ public class MyClippingsParser extends Parser {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 3) ) { return retval; }
 
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:50:7: ( (~ ( NEWLINE | SEP ) )+ NEWLINE )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:51:2: (~ ( NEWLINE | SEP ) )+ NEWLINE
+            // MyClippings.g:50:7: ( (~ ( NEWLINE | SEP ) )+ NEWLINE )
+            // MyClippings.g:51:2: (~ ( NEWLINE | SEP ) )+ NEWLINE
             {
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:51:2: (~ ( NEWLINE | SEP ) )+
+            // MyClippings.g:51:2: (~ ( NEWLINE | SEP ) )+
             int cnt3=0;
             loop3:
             do {
@@ -312,7 +312,7 @@ public class MyClippingsParser extends Parser {
 
                 switch (alt3) {
             	case 1 :
-            	    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:
+            	    // MyClippings.g:
             	    {
             	    if ( (input.LA(1) >= AMPM && input.LA(1) <= MONTH)||input.LA(1)==NUM||(input.LA(1) >= SP && input.LA(1) <= 27) ) {
             	        input.consume();
@@ -365,15 +365,15 @@ public class MyClippingsParser extends Parser {
 
 
     // $ANTLR start "bookmark"
-    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:90:1: bookmark : '-' SP 'Bookmark' SP location SP added_on NEWLINE NEWLINE ;
+    // MyClippings.g:90:1: bookmark : '-' SP 'Bookmark' SP location SP added_on NEWLINE NEWLINE ;
     public final void bookmark() throws RecognitionException {
         int bookmark_StartIndex = input.index();
 
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 4) ) { return ; }
 
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:91:2: ( '-' SP 'Bookmark' SP location SP added_on NEWLINE NEWLINE )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:91:4: '-' SP 'Bookmark' SP location SP added_on NEWLINE NEWLINE
+            // MyClippings.g:91:2: ( '-' SP 'Bookmark' SP location SP added_on NEWLINE NEWLINE )
+            // MyClippings.g:91:4: '-' SP 'Bookmark' SP location SP added_on NEWLINE NEWLINE
             {
             match(input,20,FOLLOW_20_in_bookmark156); if (state.failed) return ;
 
@@ -425,7 +425,7 @@ public class MyClippingsParser extends Parser {
 
 
     // $ANTLR start "note"
-    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:98:1: note : '-' SP 'Note' SP location SP added_on NEWLINE content ;
+    // MyClippings.g:98:1: note : '-' SP 'Note' SP location SP added_on NEWLINE content ;
     public final void note() throws RecognitionException {
         int note_StartIndex = input.index();
 
@@ -435,8 +435,8 @@ public class MyClippingsParser extends Parser {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 5) ) { return ; }
 
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:99:2: ( '-' SP 'Note' SP location SP added_on NEWLINE content )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:99:4: '-' SP 'Note' SP location SP added_on NEWLINE content
+            // MyClippings.g:99:2: ( '-' SP 'Note' SP location SP added_on NEWLINE content )
+            // MyClippings.g:99:4: '-' SP 'Note' SP location SP added_on NEWLINE content
             {
             match(input,20,FOLLOW_20_in_note189); if (state.failed) return ;
 
@@ -493,7 +493,7 @@ public class MyClippingsParser extends Parser {
 
 
     // $ANTLR start "highlight"
-    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:106:1: highlight : '-' SP 'Highlight' SP location SP ( '-' toloc= NUM )? SP added_on NEWLINE ( NEWLINE | content ) ;
+    // MyClippings.g:106:1: highlight : '-' SP 'Highlight' SP location SP ( '-' toloc= NUM )? SP added_on NEWLINE ( NEWLINE | content ) ;
     public final void highlight() throws RecognitionException {
         int highlight_StartIndex = input.index();
 
@@ -504,8 +504,8 @@ public class MyClippingsParser extends Parser {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 6) ) { return ; }
 
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:107:2: ( '-' SP 'Highlight' SP location SP ( '-' toloc= NUM )? SP added_on NEWLINE ( NEWLINE | content ) )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:107:4: '-' SP 'Highlight' SP location SP ( '-' toloc= NUM )? SP added_on NEWLINE ( NEWLINE | content )
+            // MyClippings.g:107:2: ( '-' SP 'Highlight' SP location SP ( '-' toloc= NUM )? SP added_on NEWLINE ( NEWLINE | content ) )
+            // MyClippings.g:107:4: '-' SP 'Highlight' SP location SP ( '-' toloc= NUM )? SP added_on NEWLINE ( NEWLINE | content )
             {
             match(input,20,FOLLOW_20_in_highlight221); if (state.failed) return ;
 
@@ -523,7 +523,7 @@ public class MyClippingsParser extends Parser {
 
             match(input,SP,FOLLOW_SP_in_highlight231); if (state.failed) return ;
 
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:107:39: ( '-' toloc= NUM )?
+            // MyClippings.g:107:39: ( '-' toloc= NUM )?
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -532,7 +532,7 @@ public class MyClippingsParser extends Parser {
             }
             switch (alt4) {
                 case 1 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:107:40: '-' toloc= NUM
+                    // MyClippings.g:107:40: '-' toloc= NUM
                     {
                     match(input,20,FOLLOW_20_in_highlight235); if (state.failed) return ;
 
@@ -556,7 +556,7 @@ public class MyClippingsParser extends Parser {
 
             match(input,NEWLINE,FOLLOW_NEWLINE_in_highlight249); if (state.failed) return ;
 
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:107:117: ( NEWLINE | content )
+            // MyClippings.g:107:117: ( NEWLINE | content )
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -576,14 +576,14 @@ public class MyClippingsParser extends Parser {
             }
             switch (alt5) {
                 case 1 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:107:118: NEWLINE
+                    // MyClippings.g:107:118: NEWLINE
                     {
                     match(input,NEWLINE,FOLLOW_NEWLINE_in_highlight252); if (state.failed) return ;
 
                     }
                     break;
                 case 2 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:107:128: content
+                    // MyClippings.g:107:128: content
                     {
                     pushFollow(FOLLOW_content_in_highlight256);
                     content3=content();
@@ -623,7 +623,7 @@ public class MyClippingsParser extends Parser {
 
 
     // $ANTLR start "location"
-    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:114:1: location : ( 'on' SP 'Page' | 'Loc.' ) SP fromloc= NUM ;
+    // MyClippings.g:114:1: location : ( 'on' SP 'Page' | 'Loc.' ) SP fromloc= NUM ;
     public final void location() throws RecognitionException {
         int location_StartIndex = input.index();
 
@@ -632,10 +632,10 @@ public class MyClippingsParser extends Parser {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 7) ) { return ; }
 
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:115:2: ( ( 'on' SP 'Page' | 'Loc.' ) SP fromloc= NUM )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:115:5: ( 'on' SP 'Page' | 'Loc.' ) SP fromloc= NUM
+            // MyClippings.g:115:2: ( ( 'on' SP 'Page' | 'Loc.' ) SP fromloc= NUM )
+            // MyClippings.g:115:5: ( 'on' SP 'Page' | 'Loc.' ) SP fromloc= NUM
             {
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:115:5: ( 'on' SP 'Page' | 'Loc.' )
+            // MyClippings.g:115:5: ( 'on' SP 'Page' | 'Loc.' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -655,7 +655,7 @@ public class MyClippingsParser extends Parser {
             }
             switch (alt6) {
                 case 1 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:115:6: 'on' SP 'Page'
+                    // MyClippings.g:115:6: 'on' SP 'Page'
                     {
                     match(input,26,FOLLOW_26_in_location273); if (state.failed) return ;
 
@@ -666,7 +666,7 @@ public class MyClippingsParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:115:23: 'Loc.'
+                    // MyClippings.g:115:23: 'Loc.'
                     {
                     match(input,23,FOLLOW_23_in_location281); if (state.failed) return ;
 
@@ -707,7 +707,7 @@ public class MyClippingsParser extends Parser {
 
 
     // $ANTLR start "content"
-    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:124:1: content : (~ ( NEWLINE ) )+ NEWLINE ;
+    // MyClippings.g:124:1: content : (~ ( NEWLINE ) )+ NEWLINE ;
     public final MyClippingsParser.content_return content() throws RecognitionException {
         MyClippingsParser.content_return retval = new MyClippingsParser.content_return();
         retval.start = input.LT(1);
@@ -717,10 +717,10 @@ public class MyClippingsParser extends Parser {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 8) ) { return retval; }
 
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:125:2: ( (~ ( NEWLINE ) )+ NEWLINE )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:125:4: (~ ( NEWLINE ) )+ NEWLINE
+            // MyClippings.g:125:2: ( (~ ( NEWLINE ) )+ NEWLINE )
+            // MyClippings.g:125:4: (~ ( NEWLINE ) )+ NEWLINE
             {
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:125:4: (~ ( NEWLINE ) )+
+            // MyClippings.g:125:4: (~ ( NEWLINE ) )+
             int cnt7=0;
             loop7:
             do {
@@ -734,7 +734,7 @@ public class MyClippingsParser extends Parser {
 
                 switch (alt7) {
             	case 1 :
-            	    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:
+            	    // MyClippings.g:
             	    {
             	    if ( (input.LA(1) >= AMPM && input.LA(1) <= MONTH)||(input.LA(1) >= NUM && input.LA(1) <= 27) ) {
             	        input.consume();
@@ -787,7 +787,7 @@ public class MyClippingsParser extends Parser {
 
 
     // $ANTLR start "added_on"
-    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:130:1: added_on : '| Added on ' d= DATE ', ' t= TIME NEWLINE ;
+    // MyClippings.g:130:1: added_on : '| Added on ' d= DATE ', ' t= TIME NEWLINE ;
     public final void added_on() throws RecognitionException {
         int added_on_StartIndex = input.index();
 
@@ -797,8 +797,8 @@ public class MyClippingsParser extends Parser {
         try {
             if ( state.backtracking>0 && alreadyParsedRule(input, 9) ) { return ; }
 
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:131:2: ( '| Added on ' d= DATE ', ' t= TIME NEWLINE )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:131:4: '| Added on ' d= DATE ', ' t= TIME NEWLINE
+            // MyClippings.g:131:2: ( '| Added on ' d= DATE ', ' t= TIME NEWLINE )
+            // MyClippings.g:131:4: '| Added on ' d= DATE ', ' t= TIME NEWLINE
             {
             match(input,27,FOLLOW_27_in_added_on327); if (state.failed) return ;
 

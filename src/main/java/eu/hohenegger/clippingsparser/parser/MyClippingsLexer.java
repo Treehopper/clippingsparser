@@ -1,4 +1,4 @@
-// $ANTLR 3.4 C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g 2011-11-13 20:24:20
+// $ANTLR 3.4 MyClippings.g 2011-11-13 20:24:20
 
 package eu.hohenegger.clippingsparser.parser;
 
@@ -49,15 +49,15 @@ public class MyClippingsLexer extends Lexer {
     public MyClippingsLexer(CharStream input, RecognizerSharedState state) {
         super(input,state);
     }
-    public String getGrammarFileName() { return "C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g"; }
+    public String getGrammarFileName() { return "MyClippings.g"; }
 
     // $ANTLR start "T__19"
     public final void mT__19() throws RecognitionException {
         try {
             int _type = T__19;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:11:7: ( ', ' )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:11:9: ', '
+            // MyClippings.g:11:7: ( ', ' )
+            // MyClippings.g:11:9: ', '
             {
             match(", "); 
 
@@ -79,8 +79,8 @@ public class MyClippingsLexer extends Lexer {
         try {
             int _type = T__20;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:12:7: ( '-' )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:12:9: '-'
+            // MyClippings.g:12:7: ( '-' )
+            // MyClippings.g:12:9: '-'
             {
             match('-'); 
 
@@ -100,8 +100,8 @@ public class MyClippingsLexer extends Lexer {
         try {
             int _type = T__21;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:13:7: ( 'Bookmark' )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:13:9: 'Bookmark'
+            // MyClippings.g:13:7: ( 'Bookmark' )
+            // MyClippings.g:13:9: 'Bookmark'
             {
             match("Bookmark"); 
 
@@ -123,8 +123,8 @@ public class MyClippingsLexer extends Lexer {
         try {
             int _type = T__22;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:14:7: ( 'Highlight' )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:14:9: 'Highlight'
+            // MyClippings.g:14:7: ( 'Highlight' )
+            // MyClippings.g:14:9: 'Highlight'
             {
             match("Highlight"); 
 
@@ -146,8 +146,8 @@ public class MyClippingsLexer extends Lexer {
         try {
             int _type = T__23;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:15:7: ( 'Loc.' )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:15:9: 'Loc.'
+            // MyClippings.g:15:7: ( 'Loc.' )
+            // MyClippings.g:15:9: 'Loc.'
             {
             match("Loc."); 
 
@@ -169,8 +169,8 @@ public class MyClippingsLexer extends Lexer {
         try {
             int _type = T__24;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:16:7: ( 'Note' )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:16:9: 'Note'
+            // MyClippings.g:16:7: ( 'Note' )
+            // MyClippings.g:16:9: 'Note'
             {
             match("Note"); 
 
@@ -192,8 +192,8 @@ public class MyClippingsLexer extends Lexer {
         try {
             int _type = T__25;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:17:7: ( 'Page' )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:17:9: 'Page'
+            // MyClippings.g:17:7: ( 'Page' )
+            // MyClippings.g:17:9: 'Page'
             {
             match("Page"); 
 
@@ -215,8 +215,8 @@ public class MyClippingsLexer extends Lexer {
         try {
             int _type = T__26;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:18:7: ( 'on' )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:18:9: 'on'
+            // MyClippings.g:18:7: ( 'on' )
+            // MyClippings.g:18:9: 'on'
             {
             match("on"); 
 
@@ -238,8 +238,8 @@ public class MyClippingsLexer extends Lexer {
         try {
             int _type = T__27;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:19:7: ( '| Added on ' )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:19:9: '| Added on '
+            // MyClippings.g:19:7: ( '| Added on ' )
+            // MyClippings.g:19:9: '| Added on '
             {
             match("| Added on "); 
 
@@ -261,10 +261,10 @@ public class MyClippingsLexer extends Lexer {
         try {
             int _type = SP;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:162:5: ( ( ' ' )+ )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:162:7: ( ' ' )+
+            // MyClippings.g:162:5: ( ( ' ' )+ )
+            // MyClippings.g:162:7: ( ' ' )+
             {
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:162:7: ( ' ' )+
+            // MyClippings.g:162:7: ( ' ' )+
             int cnt1=0;
             loop1:
             do {
@@ -278,7 +278,7 @@ public class MyClippingsLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:162:7: ' '
+            	    // MyClippings.g:162:7: ' '
             	    {
             	    match(' '); 
 
@@ -311,8 +311,8 @@ public class MyClippingsLexer extends Lexer {
         try {
             int _type = TIME;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:164:7: ( HOUR ':' MIN ' ' AMPM )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:164:9: HOUR ':' MIN ' ' AMPM
+            // MyClippings.g:164:7: ( HOUR ':' MIN ' ' AMPM )
+            // MyClippings.g:164:9: HOUR ':' MIN ' ' AMPM
             {
             mHOUR(); 
 
@@ -341,10 +341,10 @@ public class MyClippingsLexer extends Lexer {
     // $ANTLR start "HOUR"
     public final void mHOUR() throws RecognitionException {
         try {
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:167:2: ( ( ( '0' '1' .. '9' ) | ( '1' '0' .. '2' ) ) )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:167:4: ( ( '0' '1' .. '9' ) | ( '1' '0' .. '2' ) )
+            // MyClippings.g:167:2: ( ( ( '0' '1' .. '9' ) | ( '1' '0' .. '2' ) ) )
+            // MyClippings.g:167:4: ( ( '0' '1' .. '9' ) | ( '1' '0' .. '2' ) )
             {
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:167:4: ( ( '0' '1' .. '9' ) | ( '1' '0' .. '2' ) )
+            // MyClippings.g:167:4: ( ( '0' '1' .. '9' ) | ( '1' '0' .. '2' ) )
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -363,10 +363,10 @@ public class MyClippingsLexer extends Lexer {
             }
             switch (alt2) {
                 case 1 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:167:5: ( '0' '1' .. '9' )
+                    // MyClippings.g:167:5: ( '0' '1' .. '9' )
                     {
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:167:5: ( '0' '1' .. '9' )
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:167:6: '0' '1' .. '9'
+                    // MyClippings.g:167:5: ( '0' '1' .. '9' )
+                    // MyClippings.g:167:6: '0' '1' .. '9'
                     {
                     match('0'); 
 
@@ -378,10 +378,10 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:167:22: ( '1' '0' .. '2' )
+                    // MyClippings.g:167:22: ( '1' '0' .. '2' )
                     {
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:167:22: ( '1' '0' .. '2' )
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:167:23: '1' '0' .. '2'
+                    // MyClippings.g:167:22: ( '1' '0' .. '2' )
+                    // MyClippings.g:167:23: '1' '0' .. '2'
                     {
                     match('1'); 
 
@@ -409,14 +409,14 @@ public class MyClippingsLexer extends Lexer {
     // $ANTLR start "MIN"
     public final void mMIN() throws RecognitionException {
         try {
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:169:2: ( ( ( '0' .. '5' DIGIT ) ) )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:169:4: ( ( '0' .. '5' DIGIT ) )
+            // MyClippings.g:169:2: ( ( ( '0' .. '5' DIGIT ) ) )
+            // MyClippings.g:169:4: ( ( '0' .. '5' DIGIT ) )
             {
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:169:4: ( ( '0' .. '5' DIGIT ) )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:169:5: ( '0' .. '5' DIGIT )
+            // MyClippings.g:169:4: ( ( '0' .. '5' DIGIT ) )
+            // MyClippings.g:169:5: ( '0' .. '5' DIGIT )
             {
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:169:5: ( '0' .. '5' DIGIT )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:169:6: '0' .. '5' DIGIT
+            // MyClippings.g:169:5: ( '0' .. '5' DIGIT )
+            // MyClippings.g:169:6: '0' .. '5' DIGIT
             {
             matchRange('0','5'); 
 
@@ -442,7 +442,7 @@ public class MyClippingsLexer extends Lexer {
     // $ANTLR start "AMPM"
     public final void mAMPM() throws RecognitionException {
         try {
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:171:16: ( 'AM' | 'PM' )
+            // MyClippings.g:171:16: ( 'AM' | 'PM' )
             int alt3=2;
             int LA3_0 = input.LA(1);
 
@@ -461,7 +461,7 @@ public class MyClippingsLexer extends Lexer {
             }
             switch (alt3) {
                 case 1 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:171:18: 'AM'
+                    // MyClippings.g:171:18: 'AM'
                     {
                     match("AM"); 
 
@@ -470,7 +470,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:171:25: 'PM'
+                    // MyClippings.g:171:25: 'PM'
                     {
                     match("PM"); 
 
@@ -493,8 +493,8 @@ public class MyClippingsLexer extends Lexer {
         try {
             int _type = DATE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:173:7: ( DAY_OF_WEEK ', ' MONTH ' ' DAY_OF_MONTH ', ' YEAR )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:173:9: DAY_OF_WEEK ', ' MONTH ' ' DAY_OF_MONTH ', ' YEAR
+            // MyClippings.g:173:7: ( DAY_OF_WEEK ', ' MONTH ' ' DAY_OF_MONTH ', ' YEAR )
+            // MyClippings.g:173:9: DAY_OF_WEEK ', ' MONTH ' ' DAY_OF_MONTH ', ' YEAR
             {
             mDAY_OF_WEEK(); 
 
@@ -532,8 +532,8 @@ public class MyClippingsLexer extends Lexer {
     // $ANTLR start "YEAR"
     public final void mYEAR() throws RecognitionException {
         try {
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:177:5: ( '1' .. '9' DIGIT DIGIT DIGIT )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:177:7: '1' .. '9' DIGIT DIGIT DIGIT
+            // MyClippings.g:177:5: ( '1' .. '9' DIGIT DIGIT DIGIT )
+            // MyClippings.g:177:7: '1' .. '9' DIGIT DIGIT DIGIT
             {
             matchRange('1','9'); 
 
@@ -559,7 +559,7 @@ public class MyClippingsLexer extends Lexer {
     // $ANTLR start "MONTH"
     public final void mMONTH() throws RecognitionException {
         try {
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:181:5: ( 'January' | 'February' | 'March' | 'April' | 'May' | 'June' | 'July' | 'August' | 'September' | 'October' | 'November' | 'December' )
+            // MyClippings.g:181:5: ( 'January' | 'February' | 'March' | 'April' | 'May' | 'June' | 'July' | 'August' | 'September' | 'October' | 'November' | 'December' )
             int alt4=12;
             switch ( input.LA(1) ) {
             case 'J':
@@ -679,7 +679,7 @@ public class MyClippingsLexer extends Lexer {
 
             switch (alt4) {
                 case 1 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:181:7: 'January'
+                    // MyClippings.g:181:7: 'January'
                     {
                     match("January"); 
 
@@ -688,7 +688,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:182:7: 'February'
+                    // MyClippings.g:182:7: 'February'
                     {
                     match("February"); 
 
@@ -697,7 +697,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:183:7: 'March'
+                    // MyClippings.g:183:7: 'March'
                     {
                     match("March"); 
 
@@ -706,7 +706,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 4 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:184:7: 'April'
+                    // MyClippings.g:184:7: 'April'
                     {
                     match("April"); 
 
@@ -715,7 +715,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 5 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:185:7: 'May'
+                    // MyClippings.g:185:7: 'May'
                     {
                     match("May"); 
 
@@ -724,7 +724,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 6 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:186:7: 'June'
+                    // MyClippings.g:186:7: 'June'
                     {
                     match("June"); 
 
@@ -733,7 +733,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 7 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:187:7: 'July'
+                    // MyClippings.g:187:7: 'July'
                     {
                     match("July"); 
 
@@ -742,7 +742,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 8 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:188:7: 'August'
+                    // MyClippings.g:188:7: 'August'
                     {
                     match("August"); 
 
@@ -751,7 +751,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 9 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:189:7: 'September'
+                    // MyClippings.g:189:7: 'September'
                     {
                     match("September"); 
 
@@ -760,7 +760,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 10 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:190:7: 'October'
+                    // MyClippings.g:190:7: 'October'
                     {
                     match("October"); 
 
@@ -769,7 +769,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 11 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:191:7: 'November'
+                    // MyClippings.g:191:7: 'November'
                     {
                     match("November"); 
 
@@ -778,7 +778,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 12 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:192:7: 'December'
+                    // MyClippings.g:192:7: 'December'
                     {
                     match("December"); 
 
@@ -799,7 +799,7 @@ public class MyClippingsLexer extends Lexer {
     // $ANTLR start "DAY_OF_MONTH"
     public final void mDAY_OF_MONTH() throws RecognitionException {
         try {
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:195:23: ( ( '0' '1' .. '9' ) | ( '1' .. '2' '0' .. '9' ) | '30' | '31' )
+            // MyClippings.g:195:23: ( ( '0' '1' .. '9' ) | ( '1' .. '2' '0' .. '9' ) | '30' | '31' )
             int alt5=4;
             switch ( input.LA(1) ) {
             case '0':
@@ -842,10 +842,10 @@ public class MyClippingsLexer extends Lexer {
 
             switch (alt5) {
                 case 1 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:195:25: ( '0' '1' .. '9' )
+                    // MyClippings.g:195:25: ( '0' '1' .. '9' )
                     {
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:195:25: ( '0' '1' .. '9' )
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:195:26: '0' '1' .. '9'
+                    // MyClippings.g:195:25: ( '0' '1' .. '9' )
+                    // MyClippings.g:195:26: '0' '1' .. '9'
                     {
                     match('0'); 
 
@@ -857,10 +857,10 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:195:42: ( '1' .. '2' '0' .. '9' )
+                    // MyClippings.g:195:42: ( '1' .. '2' '0' .. '9' )
                     {
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:195:42: ( '1' .. '2' '0' .. '9' )
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:195:43: '1' .. '2' '0' .. '9'
+                    // MyClippings.g:195:42: ( '1' .. '2' '0' .. '9' )
+                    // MyClippings.g:195:43: '1' .. '2' '0' .. '9'
                     {
                     matchRange('1','2'); 
 
@@ -872,7 +872,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:195:64: '30'
+                    // MyClippings.g:195:64: '30'
                     {
                     match("30"); 
 
@@ -881,7 +881,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 4 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:195:71: '31'
+                    // MyClippings.g:195:71: '31'
                     {
                     match("31"); 
 
@@ -902,7 +902,7 @@ public class MyClippingsLexer extends Lexer {
     // $ANTLR start "DAY_OF_WEEK"
     public final void mDAY_OF_WEEK() throws RecognitionException {
         try {
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:200:5: ( 'Monday' | 'Tuesday' | 'Wednesday' | 'Thursday' | 'Friday' | 'Saturday' | 'Sunday' )
+            // MyClippings.g:200:5: ( 'Monday' | 'Tuesday' | 'Wednesday' | 'Thursday' | 'Friday' | 'Saturday' | 'Sunday' )
             int alt6=7;
             switch ( input.LA(1) ) {
             case 'M':
@@ -968,7 +968,7 @@ public class MyClippingsLexer extends Lexer {
 
             switch (alt6) {
                 case 1 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:200:7: 'Monday'
+                    // MyClippings.g:200:7: 'Monday'
                     {
                     match("Monday"); 
 
@@ -977,7 +977,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:201:7: 'Tuesday'
+                    // MyClippings.g:201:7: 'Tuesday'
                     {
                     match("Tuesday"); 
 
@@ -986,7 +986,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:202:7: 'Wednesday'
+                    // MyClippings.g:202:7: 'Wednesday'
                     {
                     match("Wednesday"); 
 
@@ -995,7 +995,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 4 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:203:7: 'Thursday'
+                    // MyClippings.g:203:7: 'Thursday'
                     {
                     match("Thursday"); 
 
@@ -1004,7 +1004,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 5 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:204:7: 'Friday'
+                    // MyClippings.g:204:7: 'Friday'
                     {
                     match("Friday"); 
 
@@ -1013,7 +1013,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 6 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:205:7: 'Saturday'
+                    // MyClippings.g:205:7: 'Saturday'
                     {
                     match("Saturday"); 
 
@@ -1022,7 +1022,7 @@ public class MyClippingsLexer extends Lexer {
                     }
                     break;
                 case 7 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:206:7: 'Sunday'
+                    // MyClippings.g:206:7: 'Sunday'
                     {
                     match("Sunday"); 
 
@@ -1045,8 +1045,8 @@ public class MyClippingsLexer extends Lexer {
         try {
             int _type = SEP;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:211:6: ( '==========' )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:211:8: '=========='
+            // MyClippings.g:211:6: ( '==========' )
+            // MyClippings.g:211:8: '=========='
             {
             match("=========="); 
 
@@ -1068,10 +1068,10 @@ public class MyClippingsLexer extends Lexer {
         try {
             int _type = NEWLINE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:216:9: ( ( '\\r' )? '\\n' )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:216:11: ( '\\r' )? '\\n'
+            // MyClippings.g:216:9: ( ( '\\r' )? '\\n' )
+            // MyClippings.g:216:11: ( '\\r' )? '\\n'
             {
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:216:11: ( '\\r' )?
+            // MyClippings.g:216:11: ( '\\r' )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -1080,7 +1080,7 @@ public class MyClippingsLexer extends Lexer {
             }
             switch (alt7) {
                 case 1 :
-                    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:216:11: '\\r'
+                    // MyClippings.g:216:11: '\\r'
                     {
                     match('\r'); 
 
@@ -1108,12 +1108,12 @@ public class MyClippingsLexer extends Lexer {
         try {
             int _type = NUM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:218:5: ( '1' .. '9' ( DIGIT )* )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:218:7: '1' .. '9' ( DIGIT )*
+            // MyClippings.g:218:5: ( '1' .. '9' ( DIGIT )* )
+            // MyClippings.g:218:7: '1' .. '9' ( DIGIT )*
             {
             matchRange('1','9'); 
 
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:218:16: ( DIGIT )*
+            // MyClippings.g:218:16: ( DIGIT )*
             loop8:
             do {
                 int alt8=2;
@@ -1126,7 +1126,7 @@ public class MyClippingsLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:
+            	    // MyClippings.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
             	        input.consume();
@@ -1161,8 +1161,8 @@ public class MyClippingsLexer extends Lexer {
     // $ANTLR start "DIGIT"
     public final void mDIGIT() throws RecognitionException {
         try {
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:223:19: ( ( '0' .. '9' ) )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:
+            // MyClippings.g:223:19: ( ( '0' .. '9' ) )
+            // MyClippings.g:
             {
             if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
                 input.consume();
@@ -1189,8 +1189,8 @@ public class MyClippingsLexer extends Lexer {
         try {
             int _type = UNICODE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:225:10: ( '\\u0000' .. '\\u00FF' )
-            // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:
+            // MyClippings.g:225:10: ( '\\u0000' .. '\\u00FF' )
+            // MyClippings.g:
             {
             if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\u00FF') ) {
                 input.consume();
@@ -1214,7 +1214,7 @@ public class MyClippingsLexer extends Lexer {
     // $ANTLR end "UNICODE"
 
     public void mTokens() throws RecognitionException {
-        // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:1:8: ( T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | SP | TIME | DATE | SEP | NEWLINE | NUM | UNICODE )
+        // MyClippings.g:1:8: ( T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | SP | TIME | DATE | SEP | NEWLINE | NUM | UNICODE )
         int alt9=16;
         switch ( input.LA(1) ) {
         case ',':
@@ -1697,7 +1697,7 @@ public class MyClippingsLexer extends Lexer {
 
         switch (alt9) {
             case 1 :
-                // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:1:10: T__19
+                // MyClippings.g:1:10: T__19
                 {
                 mT__19(); 
 
@@ -1705,7 +1705,7 @@ public class MyClippingsLexer extends Lexer {
                 }
                 break;
             case 2 :
-                // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:1:16: T__20
+                // MyClippings.g:1:16: T__20
                 {
                 mT__20(); 
 
@@ -1713,7 +1713,7 @@ public class MyClippingsLexer extends Lexer {
                 }
                 break;
             case 3 :
-                // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:1:22: T__21
+                // MyClippings.g:1:22: T__21
                 {
                 mT__21(); 
 
@@ -1721,7 +1721,7 @@ public class MyClippingsLexer extends Lexer {
                 }
                 break;
             case 4 :
-                // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:1:28: T__22
+                // MyClippings.g:1:28: T__22
                 {
                 mT__22(); 
 
@@ -1729,7 +1729,7 @@ public class MyClippingsLexer extends Lexer {
                 }
                 break;
             case 5 :
-                // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:1:34: T__23
+                // MyClippings.g:1:34: T__23
                 {
                 mT__23(); 
 
@@ -1737,7 +1737,7 @@ public class MyClippingsLexer extends Lexer {
                 }
                 break;
             case 6 :
-                // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:1:40: T__24
+                // MyClippings.g:1:40: T__24
                 {
                 mT__24(); 
 
@@ -1745,7 +1745,7 @@ public class MyClippingsLexer extends Lexer {
                 }
                 break;
             case 7 :
-                // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:1:46: T__25
+                // MyClippings.g:1:46: T__25
                 {
                 mT__25(); 
 
@@ -1753,7 +1753,7 @@ public class MyClippingsLexer extends Lexer {
                 }
                 break;
             case 8 :
-                // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:1:52: T__26
+                // MyClippings.g:1:52: T__26
                 {
                 mT__26(); 
 
@@ -1761,7 +1761,7 @@ public class MyClippingsLexer extends Lexer {
                 }
                 break;
             case 9 :
-                // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:1:58: T__27
+                // MyClippings.g:1:58: T__27
                 {
                 mT__27(); 
 
@@ -1769,7 +1769,7 @@ public class MyClippingsLexer extends Lexer {
                 }
                 break;
             case 10 :
-                // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:1:64: SP
+                // MyClippings.g:1:64: SP
                 {
                 mSP(); 
 
@@ -1777,7 +1777,7 @@ public class MyClippingsLexer extends Lexer {
                 }
                 break;
             case 11 :
-                // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:1:67: TIME
+                // MyClippings.g:1:67: TIME
                 {
                 mTIME(); 
 
@@ -1785,7 +1785,7 @@ public class MyClippingsLexer extends Lexer {
                 }
                 break;
             case 12 :
-                // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:1:72: DATE
+                // MyClippings.g:1:72: DATE
                 {
                 mDATE(); 
 
@@ -1793,7 +1793,7 @@ public class MyClippingsLexer extends Lexer {
                 }
                 break;
             case 13 :
-                // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:1:77: SEP
+                // MyClippings.g:1:77: SEP
                 {
                 mSEP(); 
 
@@ -1801,7 +1801,7 @@ public class MyClippingsLexer extends Lexer {
                 }
                 break;
             case 14 :
-                // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:1:81: NEWLINE
+                // MyClippings.g:1:81: NEWLINE
                 {
                 mNEWLINE(); 
 
@@ -1809,7 +1809,7 @@ public class MyClippingsLexer extends Lexer {
                 }
                 break;
             case 15 :
-                // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:1:89: NUM
+                // MyClippings.g:1:89: NUM
                 {
                 mNUM(); 
 
@@ -1817,7 +1817,7 @@ public class MyClippingsLexer extends Lexer {
                 }
                 break;
             case 16 :
-                // C:\\Users\\max\\Desktop\\MyClippingsParser\\MyClippings.g:1:93: UNICODE
+                // MyClippings.g:1:93: UNICODE
                 {
                 mUNICODE(); 
 
