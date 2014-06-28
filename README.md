@@ -8,4 +8,4 @@ Build Status
 
 Maven
 ===================
-$ mvn clean compile assembly:single
+$ mvn assembly:assembly -DdescriptorId=jar-with-dependencies
