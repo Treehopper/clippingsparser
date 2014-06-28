@@ -1,0 +1,17 @@
+.button{
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-padding: 3 3 3 3;
+    -fx-background-radius: 0;
+    -fx-background-color:transparent;
+/*
+	-fx-background-color:	linear-gradient(orange, orangered );
+	-fx-text-fill: black;
+	-fx-font-size: 20px;
+	-fx-padding: 5 30 5 30;
+*/
+}
+
+.button:focused {
+	-fx-base: paleturquoise;
+}
