@@ -47,6 +47,7 @@ import eu.hohenegger.clippingsparser.model.Clipping;
 @SuppressWarnings("restriction")
 public class Starter extends Application {
 
+	private static final int CONTENT_HEIGHT = 60;
 	TableView<Clipping> table = new TableView<Clipping>();
 	private Text contentBox;
 
@@ -109,15 +110,27 @@ public class Starter extends Application {
 		upperPane.getChildren().add(buildTable(stage.widthProperty()));
 		contentBox = new Text();
 		contentBox.setTextAlignment(TextAlignment.LEFT);
+		
+		
 
-//		stage.heightProperty().addListener(new ChangeListener<Number>() {
-//			@Override
-//			public void changed(ObservableValue<? extends Number> arg0,
-//					Number oldValue, Number newValue) {
-//				contentBox.prefWidth(newValue.doubleValue());
-//				contentBox.setWrappingWidth(newValue.doubleValue());
-//			}
-//		});
+
+		stage.heightProperty().addListener(new ChangeListener<Number>() {
+			@Override
+			public void changed(ObservableValue<? extends Number> arg0,
+					Number oldValue, Number newValue) {
+				splitPane.setPrefHeight(newValue.doubleValue() - CONTENT_HEIGHT);
+			}
+		});
+		
+		
+
+		stage.widthProperty().addListener(new ChangeListener<Number>() {
+			@Override
+			public void changed(ObservableValue<? extends Number> arg0,
+					Number oldValue, Number newValue) {
+				contentBox.setWrappingWidth(newValue.doubleValue() - 20);
+			}
+		});
 		
 		lowerPane.getChildren().add(contentBox);
 
