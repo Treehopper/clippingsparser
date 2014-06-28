@@ -3,7 +3,6 @@ package eu.hohenegger.clippingsparser.gui;
 import javafx.application.Application;
 import javafx.beans.property.ReadOnlyDoubleProperty;
 import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -114,23 +113,11 @@ public class Starter extends Application {
 		
 
 
-		stage.heightProperty().addListener(new ChangeListener<Number>() {
-			@Override
-			public void changed(ObservableValue<? extends Number> arg0,
-					Number oldValue, Number newValue) {
-				splitPane.setPrefHeight(newValue.doubleValue() - CONTENT_HEIGHT);
-			}
-		});
+		stage.heightProperty().addListener((ChangeListener<Number>) (arg0, oldValue, newValue) -> splitPane.setPrefHeight(newValue.doubleValue() - CONTENT_HEIGHT));
 		
 		
 
-		stage.widthProperty().addListener(new ChangeListener<Number>() {
-			@Override
-			public void changed(ObservableValue<? extends Number> arg0,
-					Number oldValue, Number newValue) {
-				contentBox.setWrappingWidth(newValue.doubleValue() - 20);
-			}
-		});
+		stage.widthProperty().addListener((ChangeListener<Number>) (arg0, oldValue, newValue) -> contentBox.setWrappingWidth(newValue.doubleValue() - 20));
 		
 		lowerPane.getChildren().add(contentBox);
 
@@ -157,19 +144,18 @@ public class Starter extends Application {
 		table.setEditable(true);
 
 		// Add change listener
-		table.getSelectionModel().selectedItemProperty()
-				.addListener(new ChangeListener<Clipping>() {
-					@Override
-					public void changed(ObservableValue observableValue,
-							Clipping oldValue, Clipping newValue) {
-						// Check whether item is selected and set value of
-						// selected item to Label
-						if (table.getSelectionModel().getSelectedItem() != null) {
-							Clipping tableProps = newValue;
-							contentBox.setText(tableProps.getContent());
-						}
-					}
-				});
+		table.getSelectionModel()
+				.selectedItemProperty()
+				.addListener(
+						(ChangeListener<Clipping>) (observableValue, oldValue,
+								newValue) -> {
+							// Check whether item is selected and set value of
+							// selected item to Label
+							if (table.getSelectionModel().getSelectedItem() != null) {
+								Clipping tableProps = newValue;
+								contentBox.setText(tableProps.getContent());
+							}
+						});
 
 		TableColumn<Clipping, String> title = new TableColumn<Clipping, String>(
 				"Title");
@@ -233,12 +219,7 @@ public class Starter extends Application {
 		final MenuItem exitItem = MenuItemBuilder
 				.create()
 				.text("Exit")
-				.onAction(new EventHandler<ActionEvent>() {
-					@Override
-					public void handle(ActionEvent arg0) {
-						System.exit(0);
-					}
-				})
+				.onAction(actionEvent -> System.exit(0))
 				.accelerator(
 						new KeyCodeCombination(KeyCode.X,
 								KeyCombination.CONTROL_DOWN)).build();
