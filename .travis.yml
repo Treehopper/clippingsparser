@@ -4,6 +4,6 @@ jdk:
 notifications:
   email:
     recipients:
-      - travis-ci.clippingsparser@hohenegger.ue
+      - travis-ci.clippingsparser@hohenegger.eu
     on_success: change
     on_failure: always
