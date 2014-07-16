@@ -47,7 +47,6 @@ public class Starter extends Application {
 	private TableView<Clipping> table = new TableView<Clipping>();
 	private Text contentBox;
 
-	
 	private final class OpenHandler implements EventHandler<MouseEvent> {
 		@Override
 		public void handle(MouseEvent event) {
@@ -68,7 +67,7 @@ public class Starter extends Application {
 				fillTable(table, ParserHelper.parse(selected));
 			} catch (IOException | RecognitionException e) {
 				Dialogs.create().owner(null).title("Error")
-						.message(e.getLocalizedMessage()).showError();
+				.message(e.getLocalizedMessage()).showError();
 				showErrorDialog();
 			}
 
@@ -76,52 +75,30 @@ public class Starter extends Application {
 
 	}
 
-	public static void main(String[] args) throws IOException,
-			RecognitionException {
-		launch(args);
-
-		System.exit(0);
+	public static void main(String... args) {
+		Application.launch(args);
 	}
 
 	@Override
 	public void start(Stage stage) throws Exception {
-//		stage.initStyle(StageStyle.UNDECORATED);
-		
+		//		stage.initStyle(StageStyle.UNDECORATED);
+
 		stage.setTitle("MyClippingsViewer");
 		final Group rootGroup = new Group();
 		Scene scene = new Scene(rootGroup, initialX, initialY, Color.WHITE);
-		
 
-		scene.getStylesheets().add(this.getClass().
-		getResource("/css/base.css").toExternalForm());
-
+		// TODO: how can css be deployed?
+		// scene.getStylesheets().add(this.getClass().
+		// getResource("/css/base.css").toExternalForm());
 
 		Button openButton = new Button("Open");
 		openButton.addEventHandler(MouseEvent.MOUSE_CLICKED, new OpenHandler());
-		
+
 		Button exitButton = new Button("Exit");
-		exitButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> System.exit(0));
-		
+		exitButton.addEventHandler(MouseEvent.MOUSE_CLICKED,
+				event -> System.exit(0));
+
 		ToolBar toolBar = new ToolBar(openButton, exitButton);
-//		toolBar.setOnMousePressed(new EventHandler<MouseEvent>() {
-//	        @Override
-//	        public void handle(MouseEvent me) {
-//	            if (me.getButton() != MouseButton.MIDDLE) {
-//	                initialX = me.getSceneX();
-//	                initialY = me.getSceneY();
-//	            }
-//	        }
-//	    });
-//
-//		toolBar.setOnMouseDragged(new EventHandler<MouseEvent>() {
-//	        @Override
-//	        public void handle(MouseEvent me) {
-//	            if (me.getButton() != MouseButton.MIDDLE) {
-//	            	toolBar.getScene().getWindow().setX(me.getScreenX() - initialX);
-//	            	toolBar.getScene().getWindow().setY(me.getScreenY() - initialY);
-//	            }
-//	        }
-//	    });
 
 		final VBox vbox = new VBox();
 		vbox.setSpacing(0);
@@ -140,18 +117,16 @@ public class Starter extends Application {
 		upperPane.getChildren().add(buildTable(stage.widthProperty()));
 		contentBox = new Text();
 		contentBox.setTextAlignment(TextAlignment.LEFT);
-		
-		
-
 
 		stage.heightProperty()
-				.addListener((observableValue, oldValue, newValue) -> splitPane
-								.setPrefHeight(newValue.doubleValue()
-										- CONTENT_HEIGHT));
-		
-		stage.widthProperty()
-				.addListener((observableValue, oldValue, newValue) -> contentBox
-								.setWrappingWidth(newValue.doubleValue() - 20));
+		.addListener(
+				(observableValue, oldValue, newValue) -> splitPane
+				.setPrefHeight(newValue.doubleValue()
+						- CONTENT_HEIGHT));
+
+		stage.widthProperty().addListener(
+				(observableValue, oldValue, newValue) -> contentBox
+				.setWrappingWidth(newValue.doubleValue() - 20));
 
 		lowerPane.getChildren().add(contentBox);
 
@@ -162,7 +137,7 @@ public class Starter extends Application {
 		stage.setScene(scene);
 		stage.show();
 	}
-	
+
 	private void showErrorDialog() {
 		Stage dialogStage = new Stage();
 		dialogStage.initModality(Modality.WINDOW_MODAL);
@@ -170,7 +145,7 @@ public class Starter extends Application {
 		vBox.getChildren().addAll(new Text("Error"), new Button("Ok."));
 		vBox.setAlignment(Pos.CENTER);
 		vBox.setPadding(new Insets(5));
-		
+
 		dialogStage.setScene(new Scene(vBox));
 		dialogStage.show();
 	}
@@ -181,10 +156,10 @@ public class Starter extends Application {
 
 		// Add change listener
 		table.getSelectionModel()
-				.selectedItemProperty()
-				.addListener(
-						(ChangeListener<Clipping>) (observableValue, oldValue,
-								newValue) -> {
+		.selectedItemProperty()
+		.addListener(
+				(ChangeListener<Clipping>) (observableValue, oldValue,
+						newValue) -> {
 							// Check whether item is selected and set value of
 							// selected item to Label
 							if (table.getSelectionModel().getSelectedItem() != null) {
@@ -215,15 +190,15 @@ public class Starter extends Application {
 				"From");
 		fromLocation.setMinWidth(100);
 		fromLocation
-				.setCellValueFactory(new PropertyValueFactory<Clipping, String>(
-						"fromLocation"));
+		.setCellValueFactory(new PropertyValueFactory<Clipping, String>(
+				"fromLocation"));
 
 		TableColumn<Clipping, String> toLocation = new TableColumn<Clipping, String>(
 				"To");
 		toLocation.setMinWidth(100);
 		toLocation
-				.setCellValueFactory(new PropertyValueFactory<Clipping, String>(
-						"toLocation"));
+		.setCellValueFactory(new PropertyValueFactory<Clipping, String>(
+				"toLocation"));
 
 		ObservableList<TableColumn<Clipping, ?>> columns = table.getColumns();
 		columns.add(title);

@@ -12,9 +12,14 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+
+		<mainClass>eu.hohenegger.clippingsparser.gui.Starter</mainClass>
+		<nativeClientName>clippingsparser</nativeClientName>
 	</properties>
 
 	<build>
+		<finalName>clippingsparser</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -26,30 +31,45 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<version>2.4</version>
+				<groupId>com.zenjava</groupId>
+				<artifactId>javafx-maven-plugin</artifactId>
+				<version>2.0</version>
 				<configuration>
-					<archive>
-						<manifest>
-							<mainClass>eu.hohenegger.clippingsparser.gui.Starter</mainClass>
-							<addClasspath>true</addClasspath>
-						</manifest>
-					</archive>
+					<mainClass>eu.hohenegger.clippingsparser.gui.Starter</mainClass>
+					<jvmArgs>
+						<jvmArg>-Xms64m</jvmArg>
+						<jvmArg>-Xmx128m</jvmArg>
+						<jvmArg>-Dsun.java2d.opengl=True</jvmArg>
+						<jvmArg>-Dfile.encoding=UTF-8</jvmArg>
+					</jvmArgs>
+					<vendor>hohenegger.eu</vendor>
 				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>native</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
-				<configuration>
-					<archive>
-						<manifest>
-							<mainClass>eu.hohenegger.clippingsparser.gui.Starter</mainClass>
-						</manifest>
-					</archive>
-					<descriptorRefs>
-						<descriptorRef>jar-with-dependencies</descriptorRef>
-					</descriptorRefs>
-				</configuration>
+				<executions>
+					<execution>
+						<id>assemble-zip</id>
+						<phase>pre-integration-test</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<descriptors>
+								<descriptor>${basedir}/src/main/resources/project_zip.xml</descriptor>
+							</descriptors>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
