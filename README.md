@@ -8,4 +8,6 @@ Build Status
 
 Maven
 ===================
-$ mvn assembly:assembly -DdescriptorId=jar-with-dependencies
+$ mvn clean install
+
+Find native launcher in 'target/jfx/native/bundles/'.
